@@ -6,16 +6,16 @@
 
 ### Classes
 
-**Logger** - log messages to the console
+**Logger** - in your code, log messages at several different levels. Have the ability to change the logging level on the Logger instance so that only messages of certain importance are shown.
 
 ### Quick start
 
 Do `npm install go-log` in your Javascript npm project directory. Then in a Javascript file:
 
 ``` js
-import { Logger } from 'go-log'
-const log = new Logger()
-log.warn('You have successfully warned using go-log')
+import { Logger } from 'go-log';
+const log = new Logger();
+log.warn('You have successfully warned using go-log');
 ```
 
 ### Description
@@ -24,20 +24,20 @@ Logger - log various priorities of message to console
 
 Usage:
 ``` js
-const logger = new Logger({
-   level: 7,
-   shy: false,
-   hideLevel: false,
-})
-logger.fatal('A fatal error')
-logger.error('An error')
-logger.warn('A warning')
-logger.success('A success')
-logger.info('An info')
-logger.debug('A debug')
-logger.trace('A trace')
-logger.debug({ text: 'Text can be supplied as an object' })
-logger.success({ obj: { or: 'you', can: 'log', any: 'object' } })
+const logger7 = new Logger({
+  level: 7,
+  shy: false,
+  hideLevel: false,
+});
+logger7.fatal('A fatal error');
+logger7.error('An error');
+logger7.warn('A warning');
+logger7.success('A success');
+logger7.info('An info');
+logger7.debug('A debug');
+logger7.trace('A trace');
+logger7.debug({ text: 'Text can be supplied as an object' });
+logger7.success({ obj: { or: 'you', can: 'log', any: 'object' } });
 ```
 
 Log levels:
