@@ -37,8 +37,7 @@ logger7.success({ obj: { or: 'you', can: 'directly log', any: 'object' } });
 ### Constructor options
 
 ``` js
-new Logger({ level, shy, hideLevel })
-})
+new Logger({ level, shy, hideLevel });
 ```
 
 level: integer, from 0 to 7
